@@ -1,0 +1,194 @@
+<!Doctype html>
+<html>
+ <head>
+<title>Coming Soon</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+body {
+  /*background: linear-gradient(90deg, white, gray);*/
+  background-color: #141414;
+}
+
+body, h1, p {
+  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin-left:  auto;
+  margin-right:  auto;
+  margin-top: 177px;
+  max-width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+.lead {
+  font-size: 21px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+a {
+  color: #3282e6;
+  text-decoration: none;
+}
+</style>
+<style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style><style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("https://sxt.cdn.skype.com/assets/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>
+
+<body>
+<div class="container text-center" id="error">
+
+  <svg height="100" width="100">
+    <circle cx="50" cy="50" r="31" stroke="#0e74b7" stroke-width="9.5" fill="none"></circle>
+    <circle cx="50" cy="50" r="6" stroke="#0e74b7" stroke-width="1" fill="#679b08"></circle>
+    <line x1="50" y1="50" x2="35" y2="50" style="stroke:#0e74b7;stroke-width:6"></line>
+    <line x1="65" y1="35" x2="50" y2="50" style="stroke:#0e74b7;stroke-width:6"></line>
+    <path d="M59 65 L83 65 L75 87 Z" fill="#0e74b7"></path>
+    <rect width="20" height="9" x="70" y="56" style="fill:#141414;stroke-width:0;"></rect>
+  </svg>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="main-icon text-success"><span class="uxicon uxicon-clock-refresh"></span></div>
+      <h1>Future home of something quite cool.</h1>
+      <p class="lead">If you're the <strong>site owner</strong>, <a href="/cpanel">log in</a> to launch this site</p>
+      <p class="lead">If you are a <strong>visitor</strong>, check back soon.</p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
